@@ -44,6 +44,7 @@ package body TC_Receiver is
             begin
                Green_LED.Toggle; --toggle the green led
                HK_TM.Send; --send housekeeping message
+               delay until Clock + Milliseconds (100);
             end;
          exception
             when others => delay until Clock + Milliseconds (100);

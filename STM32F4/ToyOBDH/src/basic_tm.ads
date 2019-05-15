@@ -17,7 +17,7 @@
 
 --  Houskeeping telemetry.
 --  This package contais a task that sends a TM message to the ground station
---  with the last temperature value every 10 s.
+--  with the last temperature and light value every 10 s.
 
 with System;
 

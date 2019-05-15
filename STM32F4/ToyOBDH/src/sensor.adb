@@ -18,7 +18,8 @@
 --  Author: Antonio Ramos Nieto
 --  Temperature sensor implementation.
 
---  This version is for a TMP36 sensor connected to GPIO pin 5 of
+--  This version is for a TMP36 sensor connected to GPIO pin 5
+--  and a LDR connected to the pin 3 of
 --  the F429 Discovery Board. See the board user manual and the
 --  mapping in STM32.ADC.
 
@@ -47,9 +48,9 @@ package body Sensor is
 
    end Initialize;
 
-   --------------------
-   -- Get Temperature--
-   --------------------
+   ------------------------------
+   -- Get Temperature and light--
+   ------------------------------
 
    procedure Get (This    : in Sensor;
                   Reading : out Sensor_Reading) is
